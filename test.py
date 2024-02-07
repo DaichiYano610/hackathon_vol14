@@ -1,1 +1,1 @@
-print("This is a pen.")
+print("This")
