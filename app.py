@@ -6,10 +6,12 @@ app = Flask(__name__)
 CORS(app)  # CORS有効化
 
 @app.route("/")
-def home():
-    return render_template("home.html")
+def index():
+    return render_template("index.html")
 
-
+@app.route("/asairi",methods = ['GET'])
+def page():
+    return render_template("asairi.html")
 
 
 #おまじない
