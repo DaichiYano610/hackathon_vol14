@@ -11,11 +11,25 @@
 <h1 class ="title" >コーヒータイマー</h1>
 
 <div class="button-container">
-  <button class="button">浅煎り</button>
-  <button class="button">中煎り</button>
-  <button class="button">深煎り</button>
-  <button class="button">カスタム</button>
+  <form action="/page" method="GET">
+    <input type="hidden" name="name" value="asairi">
+    <input class = "button" type="submit" value="浅煎り">
+  </form>
+  <form>
+    <input type="hidden" name="name" value="nakairi">
+    <input class = "button" type="submit" value="中煎り">
+  </form>
+  <form>
+    <input type="hidden" name="name" value="fukairi">
+    <input class = "button" type="submit" value="深煎り">
+  </form>
+  <form>
+    <input type="hidden" name="name" value="custom">
+    <input class = "button" type="submit" value="カスタム">
+  </form>
 </div>
+
+
 
 <p class = "info">スケールの重さをリセットして、豆の種類を選んでください</p>
 

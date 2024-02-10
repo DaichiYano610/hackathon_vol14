@@ -9,9 +9,11 @@ CORS(app)  # CORS有効化
 def index():
     return render_template("index.html")
 
-@app.route("/asairi",methods = ['GET'])
+@app.route("/page",methods = ['GET'])
 def page():
-    return render_template("asairi.html")
+    tmp = request.args.get("name")
+    print(tmp + "----------------------")
+    return render_template("index.html")
 
 
 #おまじない
