@@ -12,6 +12,7 @@ const sequences = [
     { time: 20, message: '蒸らす' },
     { time: 10, message: '50g' },
     { time: 25, message: '完成まであと少し' },
+    {できあがり}
 ];
 
 let index = 0;

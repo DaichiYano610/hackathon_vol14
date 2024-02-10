@@ -5,14 +5,69 @@
     justify-content: center;
     height: 100vh;
     font-family: sans-serif;
+    background-image: url("https://img.freepik.com/premium-photo/top-view-coffee-cup-and-coffee-beans-on-dark-table_1029679-3585.jpg?w=996");
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: wheat;
+    background-blend-mode: normal;
+}
+
+html,
+body {
+    overflow: hidden
 }
 
 #timer {
-    font-size: 48px;
+    font-size: 68px;
     font-weight: bold;
     margin-bottom: 20px;
+    color: aliceblue;
 }
 
 #message {
-    font-size: 24px;
+    font-size: 40px;
+    color: aliceblue;
+}
+
+section.recipe {
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 100;
+    padding: 1px 30px 8px;
+    border: 5px rgba(202, 198, 186, 0.921) solid;
+    background-color: rgba(245, 245, 245, 0.35);
+    background-blend-mode: normal;
+    border-style: inset;
+    font-size: large;
+}
+
+
+
+/*モバイル版*/
+@media (max-width: 768px) {
+    .s.recipe {
+        padding: 25px 20px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .s.recipe {
+        padding: 30px;
+    }
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    /* スマホ版では縦並びに */
+}
+
+.recipe {
+    flex: 1 0 auto;
+    /* 幅を自動調整 */
+    margin: 0 auto;
+    /* 中央に配置 */
 }
