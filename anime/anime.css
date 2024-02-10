@@ -1,0 +1,29 @@
+div.sample{
+    text-align: center;
+    margin-top: 15ex;
+}
+div.sample img{
+max-width: 90px;/*画像の幅指定*/
+    animation: jump 2s linear;/*アニメーションの名前を指定*/
+    animation-iteration-count :3;/*実行回数を指定*/
+}
+@keyframes jump{
+    0%{transform:translateY(0px);}
+    20%{transform:translateY(20px);}
+    40%{transform:translateY(40px);}
+    60%{transform:translateY(60px);}
+    80%{transform:translateY(80px);}
+    100%{transform:translateY(100px);}
+    }
+
+div.sample2{
+        text-align: center;
+        margin-top: 0;
+    }
+div.sample2 img{
+    width: 200px;
+    height: 200px;
+}
+
+
+
