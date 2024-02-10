@@ -1,5 +1,6 @@
 .title{
     text-align: center;
+    margin-top: 90px;
     margin-bottom: 50px;
 }
 
@@ -8,12 +9,12 @@
   }
   
   .button {
-    padding: 10px 20px;
+    padding: 20px 30px;
     margin-right: 10px;
-    background-color: #007bff;
+    background-color: #be7d03;
     color: #fff;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
     transition: background-color 0.3s;
   }
@@ -21,3 +22,8 @@
   .button:hover {
     background-color: #0056b3;
   }
+
+.info{
+  text-align: center;
+  margin-top: 40px;
+}
