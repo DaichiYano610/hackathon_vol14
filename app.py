@@ -14,7 +14,7 @@ def index():
 def page():
     tmp = request.args.get("name")
     print(tmp + "----------------------")
-    return render_template("index.html",know = knowledge.knowledge())
+    return render_template(tmp+".html",know = knowledge.knowledge())
 
 
 #おまじない
