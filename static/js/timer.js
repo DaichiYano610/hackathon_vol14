@@ -48,5 +48,5 @@ function startTimer() {
         }
     }, 1000);
 }
-console.log("a");
+
 startTimer();
