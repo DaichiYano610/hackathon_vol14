@@ -14,13 +14,19 @@
     background-blend-mode: normal;
 }
 
-.know{
-    color: azure;
-}
-
 html,
 body {
     overflow: hidden
+}
+
+#page-title {
+    position: fixed;
+    font-size: 2rem;
+    top: 0;
+    line-height: 1.7;
+    white-space: nowrap;
+    font-weight: bold;
+    font-size: 3rem;
 }
 
 #timer {
@@ -31,8 +37,15 @@ body {
 }
 
 #message {
-    font-size: 40px;
+    font-size: 24px;
     color: aliceblue;
+
+}
+
+@import url('https://fonts.googleapis.com/earlyaccess/hannari.css');
+
+.font {
+    font-family: "Hannari";
 }
 
 section.recipe {
@@ -46,9 +59,13 @@ section.recipe {
     background-blend-mode: normal;
     border-style: inset;
     font-size: large;
+    margin-top: 8px;
+    margin-right: 8px;
+    line-height: 1.7;
+    color: #432;
+    line-height: 1.5;
+
 }
-
-
 
 /*モバイル版*/
 @media (max-width: 768px) {
@@ -74,4 +91,8 @@ section.recipe {
     /* 幅を自動調整 */
     margin: 0 auto;
     /* 中央に配置 */
+}
+
+.know{
+    color: azure;
 }
