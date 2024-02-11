@@ -12,7 +12,7 @@ const sequences = [
     { time: 20, message: '蒸らす' },
     { time: 10, message: '50g' },
     { time: 25, message: '完成まであと少し' },
-    {できあがり}
+    {time: 0, message: 'できあがり'}
 ];
 
 let index = 0;
@@ -25,7 +25,7 @@ function startTimer() {
 
     let currentTime = time;
     intervalId = setInterval(() => {
-        currentTime--;
+        
 
         const minutes = Math.floor(currentTime / 60);
         const seconds = currentTime % 60;
@@ -43,6 +43,8 @@ function startTimer() {
             }
 
             startTimer();
+        }else{
+            currentTime--;
         }
     }, 1000);
 }

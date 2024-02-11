@@ -14,6 +14,10 @@
     background-blend-mode: normal;
 }
 
+.know{
+    color: azure;
+}
+
 html,
 body {
     overflow: hidden
